@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo 2.jpg" width="50px" height="50px">
+        <h1><strong>Profil Mahasiswa</strong></h1>
+        
+    </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showSection('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showSection('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showSection('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showSection('publikasi')">Publikasi</a></li>
+            </ul>   
+        </nav>
+
+        <section id="biodata">
+            <h2>Biodata</h2>
+            <p><strong>NIM:</strong> 2023081004</p>
+            <p><strong>Nama:</strong> Bianca Sabina Yunas</p>
+            <p><strong>Agama:</strong> Islam</p>
+            <p><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 3 Februari 2005</p>
+        </section>
+
+       <section id="pendidikan" style="display: none;">
+            <h2>Pendidikan</h2>
+            <p><strong>SD:</strong> SDN Gunung 01 Pagi</p>
+            <p><strong>SMP:</strong> SMPN 161 Jakarta</p>
+            <p><strong>SMK:</strong> SMKN 18 Jakarta</p>
+            <p><strong>Perguruan Tinggi:</strong> Universtitas Pembangunan Jaya</p>
+       </section>
+                
+        <section id="pengalaman" style="display: none;">
+            <h2>Pengalaman</h2>
+                <ul>
+                    <li>Panitia Gidhub 2024</li>
+                    <li>Magang Sosmed SIF</li>
+                    <li>IBS</li>
+                </ul>
+        </section>
+                
+        <section id="keahlian" style="display: none;">
+            <h2>Keahlian</h2>
+                <ul>
+                    <li>Design</li>
+                    <li>Problem Solving</li>
+                    <li>Ngoding</li>
+                </ul>
+        </section>  
+                
+        <section id="publikasi" style="display: none;">
+            <h2>Publikasi</h2>
+            <p>Informasi publikasi akan ditampilkan di sini.</p>
+        </section>  
+            
+        
+
+        <aside>
+            <h2>Hobi</h2>
+            <ul>
+                <li>Belanja</li>
+                <li>Tidur</li>
+                <li>Memasak</li>
+                <li>Makan</li>
+            </ul>
+        </aside>
+
+    <footer>
+        <section class="sosmed">
+            <p><strong>Twitter:</strong> @bianca </p>
+            <p><strong>Facebook:</strong> @bianca </p>
+            <p><strong>Instagram:</strong> @biancasbna</p>
+        </section>
+        
+        <section class="copyright">
+            <p>&copy; 2024. All Rights Reserved</p>
+        </section>
+        
+        <section class="slogan">
+            <p style="text-align: right;"><strong>Bianca Web</strong></p>
+            <p>Alhamdulillah Saya Masih Hidup :)</p>
+        </section>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('biodata').style.display='none';
+            document.getElementById('pendidikan').style.display='none';
+            document.getElementById('pengalaman').style.display='none';
+            document.getElementById('keahlian').style.display='none';
+            document.getElementById('publikasi').style.display='none';
+
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
